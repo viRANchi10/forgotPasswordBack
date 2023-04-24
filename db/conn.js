@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
 mongoose
-  .connect("mongodb://localhost:27017/forgotpass", {
+  .connect(process.env.DB, {
     useUnifiedTopology: true,
     useNewUrlParser: true,
   })
